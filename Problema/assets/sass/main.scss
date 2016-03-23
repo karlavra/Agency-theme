@@ -1,0 +1,218 @@
+*{
+	font-family:'Montserrat', sans-serif;
+}
+@mixin boton{
+	color: white;
+    background-color: #FED136;
+    border-color: transparent;
+    font-weight: 800;
+    padding: 20px 40px;
+    font-size: 1.3em;
+    margin: 4% 0;
+}
+@mixin iconbox{
+	background: black;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 1%;
+}
+@mixin bgn{
+	background-repeat: no-repeat;
+	width: 100%;
+	text-align: center;
+	background-size: cover;
+	color:white;
+}
+@mixin icon-box{
+	color: white;
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+header{
+	position: fixed;
+    width: 100%;
+    z-index:100;
+    .navbar{
+    	background-color: transparent;
+    	border-color: transparent;
+    	margin: 2%;
+    	.navbar-brand{
+    		color: #FED136;
+    		font-family: 'Kaushan Script', cursive;
+    		font-size: 2em;
+    	}
+    	.navbar-right{
+    		a{
+    			font-weight: 700;
+    			color: white;
+    		}
+    	}	
+    	#menu.active{
+    	background-color: #2A3541;
+    	}
+	}
+}
+.banner{
+	@include bgn;
+	background-image: url("../img/header-bg.jpg");
+	padding: 18% 5% 15%;
+	h2{
+		font-size: 3em; 
+		font-family:'Droid Serif', serif;
+	}
+	h1{
+		font-size: 5.5em;
+    	font-weight: 700;
+	}
+	a{
+		@include boton;
+	}
+}
+.servicios{
+	text-align:center;
+	padding: 10% 0%;
+	.row{
+		&:first-child{
+			margin-bottom: 5%;
+		}
+	}
+	h1{
+		font-weight: 700;
+	    font-size: 2.7em;
+	    margin-bottom: 15px;		
+	}
+	em{
+		color:#777790;
+		font-family:'Droid Serif', serif; 
+	}
+	.icon-circle{
+		background-color:#FED136;
+		width: 100px;
+		height: 100px;
+		border-radius:100%;
+		margin: auto;
+		i{
+			color:white;
+			font-size: 4em;
+			margin-top: 20px;
+		}
+	}
+	h4{
+		font-weight: 600;
+	}
+	.col-md-4{
+		p{
+			color:#777777;
+		}
+	}
+}
+.portfolio{
+	background-color:#F7F7F7;
+	@extend .servicios;
+	.img-porta{
+		background-color: white;
+    	padding-bottom: 2%;
+    	margin-bottom: 10%;
+    	img{
+    		width: 100%;
+    	}
+	}
+}
+.about{
+	@extend .servicios;
+	.circle-about{
+		BACKGROUND-COLOR: #F1F1F1;
+	    PADDING: 5PX;
+	    BORDER-RADIUS: 100%;
+	    WIDTH: 170px;
+	    height: 170px;
+	    margin: auto;
+    	img{
+    		BORDER-RADIUS: 100%;
+    		WIDTH: 100%;	
+    	}
+	}
+	.yellow{
+		BACKGROUND-COLOR: #FED136;
+	    BORDER-RADIUS: 100%;
+	    border:5px solid #F1F1F1;
+	    WIDTH: 170px;
+	    height: 170px;
+	    margin: auto;
+	    color:white;
+	    padding: 30px;
+	    h4{
+	    	margin-top: 20px;
+	    }
+	}
+	.row{
+		margin-bottom:10%;
+	}
+	hr{
+		transform: rotate(90deg);
+		width: 250px;
+		margin: auto;
+	}
+}
+.team{
+	@extend .portfolio;
+	.row
+	&:nth-child(3){
+		padding: 5% 20% 0;
+    	color: gray;
+	}
+	.circle-team{
+	border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    padding: 2%;
+    background-color: white;
+    img{
+    	width: 100%;
+    	border-radius: 100%;
+   	 	}
+	}
+	h4{
+		font-family: 'Droid Serif', serif;
+	}
+	.icon{
+	    @include iconbox;
+	    i{
+	    	@include icon-box;
+	    }
+	}
+}
+.logos{
+	text-align:center;
+	padding: 5% 0;
+}
+.contact{
+	@extend .servicios;
+	@include bgn;
+	background-image: url("../img/map-image.png");
+	background-color:#222222;
+	.btn{
+		@include boton;
+	}
+	input{
+	    MARGIN-BOTTOM: 20PX;
+		height: 65px;
+	}
+}
+footer{
+	margin:2% 0;
+	text-align:center;
+	.icon{
+	    @include iconbox;
+	    i{
+	    	@include icon-box;
+	    }
+	}
+	a{
+		color: #FED136;
+		margin:0 5px;
+	}
+}

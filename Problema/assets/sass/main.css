@@ -1,0 +1,179 @@
+* {
+  font-family: 'Montserrat', sans-serif; }
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
+  header .navbar {
+    background-color: transparent;
+    border-color: transparent;
+    margin: 2%; }
+    header .navbar .navbar-brand {
+      color: #FED136;
+      font-family: 'Kaushan Script', cursive;
+      font-size: 2em; }
+    header .navbar .navbar-right a {
+      font-weight: 700;
+      color: white; }
+    header .navbar #menu.active {
+      background-color: #2A3541; }
+
+.banner {
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+  color: white;
+  background-image: url("../img/header-bg.jpg");
+  padding: 18% 5% 15%; }
+  .banner h2 {
+    font-size: 3em;
+    font-family: 'Droid Serif', serif; }
+  .banner h1 {
+    font-size: 5.5em;
+    font-weight: 700; }
+  .banner a {
+    color: white;
+    background-color: #FED136;
+    border-color: transparent;
+    font-weight: 800;
+    padding: 20px 40px;
+    font-size: 1.3em;
+    margin: 4% 0; }
+
+.servicios, .portfolio, .team, .about, .contact {
+  text-align: center;
+  padding: 10% 0%; }
+  .servicios .row:first-child, .portfolio .row:first-child, .team .row:first-child, .about .row:first-child, .contact .row:first-child {
+    margin-bottom: 5%; }
+  .servicios h1, .portfolio h1, .team h1, .about h1, .contact h1 {
+    font-weight: 700;
+    font-size: 2.7em;
+    margin-bottom: 15px; }
+  .servicios em, .portfolio em, .team em, .about em, .contact em {
+    color: #777790;
+    font-family: 'Droid Serif', serif; }
+  .servicios .icon-circle, .portfolio .icon-circle, .team .icon-circle, .about .icon-circle, .contact .icon-circle {
+    background-color: #FED136;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: auto; }
+    .servicios .icon-circle i, .portfolio .icon-circle i, .team .icon-circle i, .about .icon-circle i, .contact .icon-circle i {
+      color: white;
+      font-size: 4em;
+      margin-top: 20px; }
+  .servicios h4, .portfolio h4, .team h4, .about h4, .contact h4 {
+    font-weight: 600; }
+  .servicios .col-md-4 p, .portfolio .col-md-4 p, .team .col-md-4 p, .about .col-md-4 p, .contact .col-md-4 p {
+    color: #777777; }
+
+.portfolio, .team {
+  background-color: #F7F7F7; }
+  .portfolio .img-porta, .team .img-porta {
+    background-color: white;
+    padding-bottom: 2%;
+    margin-bottom: 10%; }
+    .portfolio .img-porta img, .team .img-porta img {
+      width: 100%; }
+
+.about .circle-about {
+  BACKGROUND-COLOR: #F1F1F1;
+  PADDING: 5PX;
+  BORDER-RADIUS: 100%;
+  WIDTH: 170px;
+  height: 170px;
+  margin: auto; }
+  .about .circle-about img {
+    BORDER-RADIUS: 100%;
+    WIDTH: 100%; }
+.about .yellow {
+  BACKGROUND-COLOR: #FED136;
+  BORDER-RADIUS: 100%;
+  border: 5px solid #F1F1F1;
+  WIDTH: 170px;
+  height: 170px;
+  margin: auto;
+  color: white;
+  padding: 30px; }
+  .about .yellow h4 {
+    margin-top: 20px; }
+.about .row {
+  margin-bottom: 10%; }
+.about hr {
+  transform: rotate(90deg);
+  width: 250px;
+  margin: auto; }
+
+.row
+.team:nth-child(3) {
+  padding: 5% 20% 0;
+  color: gray; }
+.team .circle-team {
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding: 2%;
+  background-color: white; }
+  .team .circle-team img {
+    width: 100%;
+    border-radius: 100%; }
+.team h4 {
+  font-family: 'Droid Serif', serif; }
+.team .icon {
+  background: black;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin: 1%; }
+  .team .icon i {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 10px; }
+
+.logos {
+  text-align: center;
+  padding: 5% 0; }
+
+.contact {
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+  color: white;
+  background-image: url("../img/map-image.png");
+  background-color: #222222; }
+  .contact .btn {
+    color: white;
+    background-color: #FED136;
+    border-color: transparent;
+    font-weight: 800;
+    padding: 20px 40px;
+    font-size: 1.3em;
+    margin: 4% 0; }
+  .contact input {
+    MARGIN-BOTTOM: 20PX;
+    height: 65px; }
+
+footer {
+  margin: 2% 0;
+  text-align: center; }
+  footer .icon {
+    background: black;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 1%; }
+    footer .icon i {
+      color: white;
+      font-size: 1.5em;
+      margin-top: 10px; }
+  footer a {
+    color: #FED136;
+    margin: 0 5px; }
+
+/*# sourceMappingURL=main.css.map */
